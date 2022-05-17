@@ -11,7 +11,6 @@ const App = () => {
 
   const filterMonsters = (event) => {
     const searchTerm = event.target.value;
-    console.log(searchTerm, allUsers, monsters);
     if (searchTerm) {
       const filterRegex = new RegExp(searchTerm, 'i');
       setMonsters(allUsers.filter(monster => filterRegex.test(monster.name)));
